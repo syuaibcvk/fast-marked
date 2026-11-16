@@ -1,0 +1,16 @@
+This entry is a fork of the marked Markdown parser.
+
+  package     marked@18.1.3 on npm (published 2026-11-02)
+  source      https://github.com/markedjs/marked, tag v18.1.3,
+              commit ba50aa95636ac8f97f46446bbfeb04592ed22216
+  vendored as the package's lib/marked.esm.js (MIT), sha256
+              e76f3b37046a5d294159872002e5f6fcda8ed232e1be45ff76b3863f2919dae3
+
+parse.js in this repository is that file, reformatted from its minified
+build and modified for speed (lexer dispatch and hot-path work; see
+README.md). The HTML it returns is unchanged: for every input it is byte
+for byte what marked 18.1.3's marked.parse returns with default options.
+marked is Copyright (c) 2018+, MarkedJS and Copyright (c) 2011-2018,
+Christopher Jeffrey; its licence is the LICENSE file in this repository,
+which also carries the original Markdown's BSD-style notice
+(Copyright 2004, John Gruber).
